@@ -1,0 +1,87 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <title>Soma 0,5mg</title>
+  <link rel="stylesheet" href="style2.css" type="text/css"/>
+		
+		<script>
+		
+			var numer = Math.floor(Math.random()*5)+1;
+			
+			var timer1 = 0;
+			var timer2 = 0;
+			
+			function ustawslajd(nrslajdu)
+			{
+				clearTimeout(timer1);
+				clearTimeout(timer2);
+				numer = nrslajdu - 1;
+				
+				schowaj();
+				setTimeout("zmienslajd()", 500);
+				
+			}
+			
+		
+			function zmienslajd()
+			{
+				numer++; if (numer>4) numer=1;
+				
+				var plik = "<img src=\"photos/Soma/slajd" + numer + ".jpg\" />";
+				
+				document.getElementById("slider").innerHTML = plik;
+				
+				timer1 = setTimeout("zmienslajd()", 3000);
+				timer2 = setTimeout("schowaj()", 2500);
+			
+			}
+			
+		</script>
+
+</head>
+
+<body onload="zmienslajd()">
+ 
+<div id="container">
+   <div id="logo">Taconafide - Soma 0,5mg</div> 
+   <div id="content">
+	  <div style="text-align: center"><img id="okladka" src="photos/soma.jpg" alt="logo" width="200" height="200"/></div>
+	  <div class="tile"><a href="index.html" class="tilelink">Powrót</a></div>
+	  <div class="tile"><a href="https://queshop.pl/s?q=taconafide" class="tilelink" target="_blank">Zakup</a></div>
+   </div>
+   <div id="description">
+	<h1>Tracklista</h1>
+		<ol style="font-size:15px;">
+			<li>Intro</li>
+			<li>Metallica 808</li>
+			<li>Art-B</li>
+			<li>Ekodiesel</li>
+			<li>Wiem</li>
+			<li>Kryptowaluty</li>
+			<li>PIN</li>
+			<li>8 kobiet</li>
+			<li>Tamagotchi</li>
+			<li>Nóż</li>
+			<li>Visa</li>
+			<li>Mleko</li>
+			<li>Giro d’italia</li>
+			<li>Sectumsempra</li>
+			<li>Soma</li>
+		</ol>
+   <div id="slider"></div>
+   <p id="ocena">Ocena</p>
+   <table>
+			<tr>
+			<td>10</td>
+			<td>/</td>
+			<td>10</td>
+			</tr>
+	</table>
+   
+   </div>  
+   <div id="footer"><p id="prawa">2020 &copy; Rafał Bartczak - Wszelkie prawa zastrzeżone<p></div>
+ 
+</div>
+</body>
+</html>

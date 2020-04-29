@@ -1,0 +1,86 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+  <meta charset="utf-8"/>
+  <title>Plansze</title>
+  <link rel="stylesheet" href="style2.css" type="text/css"/>
+		
+		<script>
+		
+			var numer = Math.floor(Math.random()*5)+1;
+			
+			var timer1 = 0;
+			var timer2 = 0;
+			
+			function ustawslajd(nrslajdu)
+			{
+				clearTimeout(timer1);
+				clearTimeout(timer2);
+				numer = nrslajdu - 1;
+				
+				schowaj();
+				setTimeout("zmienslajd()", 500);
+				
+			}
+			
+		
+			function zmienslajd()
+			{
+				numer++; if (numer>4) numer=1;
+				
+				var plik = "<img src=\"photos/Plansze/slajd" + numer + ".jpg\" />";
+				
+				document.getElementById("slider").innerHTML = plik;
+				
+				timer1 = setTimeout("zmienslajd()", 3000);
+				timer2 = setTimeout("schowaj()", 2500);
+			
+			}
+			
+		</script>
+
+</head>
+
+<body onload="zmienslajd()">
+ 
+<div id="container">
+   <div id="logo">Jan-Rapowanie - Plansze</div> 
+   <div id="content">
+	  <div style="text-align: center"><img id="okladka" src="photos/plansze.png" alt="logo" width="200" height="200"/></div>
+	  <div class="tile"><a href="index.html" class="tilelink">Powrót</a></div>
+	  <div class="tile"><a href="https://www.sbmstore.pl/jan-rapowanie-nocny-plansze-kopia" class="tilelink" target="_blank">Zakup</a></div>
+   </div>
+   <div id="description">
+	<h1>Tracklista</h1>
+		<ol style="font-size:15px;">
+			<li>012</li>
+			<li>Jutro</li>
+			<li>Zaczekaj przed drzwiami</li>
+			<li>Ruchy</li>
+			<li>Układanka</li>
+			<li>Co tam</li>
+			<li>Potrzeby</li>
+			<li>Millenium sport</li>
+			<li>Wszystko OK</li>
+			<li>Chemia (Skit)</li>
+			<li>Wybory</li>
+			<li>Słowo na koniec</li>
+			<li>Szanse</li>
+			<li>Ludzie, zdarzenia</li>
+		</ol>
+   <div id="slider"></div>
+   <p id="ocena">Ocena</p>
+   <table>
+			<tr>
+			<td>10</td>
+			<td>/</td>
+			<td>10</td>
+			</tr>
+	</table>
+   
+   </div>  
+   <div id="footer"><p id="prawa">2020 &copy; Rafał Bartczak - Wszelkie prawa zastrzeżone<p></div>
+ 
+</div>
+</body>
+</html>
