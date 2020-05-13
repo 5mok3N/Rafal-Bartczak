@@ -1,0 +1,136 @@
+body
+{
+	color: #0B0C101;
+	background-color: #0B0C10;
+	font-family: Courier;
+}
+
+#container
+{
+	width: 1500px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#logo
+{
+	margin: 20px;
+	background-color: #66FCF1;
+	font-size:50px;
+	width: 1460px;
+	text-align: center;
+}
+
+#content
+{
+	width: 260px;
+	float: left;
+	background-color: #66FCF1;
+	height:720px;
+	margin: 20px;	
+}
+#content2
+{
+	width: 260px;
+	float: left;
+	background-color: #66FCF1;
+	height:720px;
+	margin: 20px;	
+}
+
+#description
+{
+	width: 800px;
+	float: left;
+	background-color: #66FCF1;
+	height:660px;
+	margin:20px;
+	font-size:20px;
+	padding:30px;
+	text-align: center;
+}
+
+#footer
+{
+	width: 1490px;
+	margin:20px;
+	margin-top:10px;
+	text-align:center;
+}
+.tile
+{
+	margin: 10px;
+	width: 240px;
+	height: 40px;
+	background-color: #45A29E;
+	font-size:20px;
+	text-align: center;
+	padding-top:10px;
+}
+.tile2
+{
+	margin: 10px;
+	width: 240px;
+	height: 40px;
+	background-color: #1F2833;
+	font-size:20px;
+	text-align: center;
+	padding-top:10px;
+}
+.tile3
+{
+	margin: 10px;
+	width: 240px;
+	height: 40px;
+	background-color: #1F2833;
+	font-size:20px;
+	text-align: center;
+	padding-top:10px;
+}
+.tile:hover
+{
+	background-color: #1F2833 ;
+}
+a.tilelink
+{
+	color:white;
+	text-decoration:none;
+	display:block;
+	width: 240px;
+	height: 50px;
+}
+.tile3:hover
+{
+	background-color: #45A29E;
+}
+#prawa
+{
+	color: #66FCF1;
+}
+.link
+{
+	margin: 5px;
+	font-size:20px;
+	text-align: center;
+	color:white;
+	font-family: Arial;
+}
+
+a
+{
+	margin: 5px;
+	font-size:20px;
+	text-align: center;
+	color:white;
+}
+#logoo
+{
+	margin-right:20px;
+	margin-top:10px;
+}
+
+#logoo2
+{
+	margin-left:20px;
+	margin-top:10px;
+}
